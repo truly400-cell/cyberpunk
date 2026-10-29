@@ -1,3 +1,15 @@
+# Songbird Rework 2.1 DS — Vikki 앞머리 포니테일 / 금발 v1
+
+[설치용 PATCH ZIP 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/Songbird_Vikki_Bangs_Blonde_v1_PATCH.zip) · [.archive 파일만 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/%21%21%21%21%21_Songbird_Vikki_Bangs_Blonde_PATCH_v1.archive)
+
+사용자가 제공한 Songbird Rework 2.1 DS에 Vikki High Ponytail의 **앞머리 포함 버전**과 **금발(blonde_golden)**을 적용하는 추가 패치입니다. 게임을 종료하고 **원본 `ARK_PACK_SongBird_Rework_2.1_DS.archive`는 유지한 채**, ZIP의 `archive` 폴더를 게임 설치 폴더에 풀어 넣으세요. **ArchiveXL과 호환되는 RED4ext가 필요합니다.** Vikki 헤어 리소스는 포함되어 있습니다.
+
+WolvenKit 8.18.0 수정·패킹·재추출, 외형별 금발/리그 연결, 비헤어 컴포넌트 보존, 150개 세그먼트 압축 해제 및 인덱스 CRC64 검사를 통과했습니다. 얼굴·의상은 원본 설정을 유지합니다. **실제 게임 실행은 미검증입니다.** 설치·복구 안내와 검증 보고서는 ZIP에 있습니다.
+
+PATCH .archive SHA-256: `50103239fbc82d3a4a6f8f03ea74125d7157f1b3c78b67793cdb890791d11c85`
+
+---
+
 # Maiko New Look — Atomiic Short Shag Hair v1
 
 [설치용 ZIP 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/Maiko_NewLook_Atomiic_ShortShag_v1.zip) · [.archive 파일만 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/%21_Maiko_NewLook_Atomiic_ShortShag_v1.archive)
