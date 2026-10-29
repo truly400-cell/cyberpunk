@@ -1,3 +1,15 @@
+# Alex Complete 1.0 — Bob Pack Vol.2 #006 / 빨간색 v1
+
+[설치용 PATCH ZIP 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/Alex_Bob006_Red_v1_PATCH.zip) · [.archive 파일만 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/%21%21%21%21%21_Alex_Bob006_Red_PATCH_v1.archive)
+
+사용자가 제공한 Alex Complete 1.0에 **Bob #006 단발과 빨간색(red_apple)**을 적용하는 추가 패치입니다. 게임을 종료하고 **원본 Alex Complete 1.0의 파일을 모두 유지한 채**, ZIP의 `archive` 폴더를 게임 설치 폴더에 풀어 넣으세요. **ArchiveXL·RED4ext와 원본 모드의 기존 의존 모드가 필요합니다.** 필요한 Bob 헤어 리소스는 포함되어 있습니다.
+
+알렉스 외형 38개를 변경하며 얼굴·의상·표정·스크립트를 유지합니다. **변장·변신 중간 연출용 외형 8개는 기존 헤어를 보존합니다.** WolvenKit 8.18.0 수정·패킹·재추출, 비헤어 데이터 보존, 107개 세그먼트 압축 해제 및 인덱스 CRC64 검사를 통과했습니다. **실제 게임 실행은 미검증입니다.** 설치·복구 안내와 검증 보고서는 ZIP에 있습니다.
+
+PATCH .archive SHA-256: `03b966c1a89bdae56576f7db915959066146d725a11984f6672a8e0c38736bc8`
+
+---
+
 # Songbird Rework 2.1 DS — Vikki 앞머리 포니테일 / 금발 v1
 
 [설치용 PATCH ZIP 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/Songbird_Vikki_Bangs_Blonde_v1_PATCH.zip) · [.archive 파일만 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/%21%21%21%21%21_Songbird_Vikki_Bangs_Blonde_PATCH_v1.archive)
