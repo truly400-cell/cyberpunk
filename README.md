@@ -1,16 +1,16 @@
-# Expanded Dual Wielding 3.7 — 오른손 조준 기울기 패치 v3 TEST
+# Expanded Dual Wielding 3.7 — 양손 위치·회전 맞춤 패치 v4 TEST
 
-[v3 설치 ZIP 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/EDW_3.7_RightHand_AimCant_v3_TEST.zip)
+[v4 설치 ZIP 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/EDW_3.7_MatchedPose_v4_TEST.zip)
 
-v2에서 `effective=45 reason=active`가 표시돼도 실제 오른손이 기울지 않는 사용자 보고를 받았습니다. v1/v2의 새 노드가 **nodesToInit 초기화 목록에 누락된 점**을 고쳤습니다. v3는 새 노드3개를 초기화/소유자 목록에 등록하고, 회전을 상위 player_base 그래프의 최종 출력 직전으로 옮겼습니다. 하위 player_dualwield는 원본 EDW3.7 데이터로 복원했습니다.
+긴 총기에서 오른손 회전만 바꾸던 v3를 교체했습니다. v4는 **왼쪽 어깨·팔·손·무기의 위치와 회전을 기준으로 오른쪽을 대칭 배치**하도록 상위 그래프를 수정합니다. 왼쪽과 오른손 권총·리볼버 원본 포즈는 보존합니다. 무기의 모델 크기가 다르면 외곽선까지 같아지는 것은 아닙니다.
 
-**게임 완전 종료 → 기존 v1/v2 패치 OFF → v3 패치 ON. 원본 EDW3.7은 유지합니다.** 수동 설치는 ZIP의 archive/bin/r6를 같은 경로에 덮어씁니다. 이전 패치와 같은 archive 파일명을 사용하여 중복을 막습니다.
+**게임 완전 종료 → 이전 v1/v2/v3 패치 OFF → v4만 ON. 원본 EDW3.7은 켜둡니다.** 수동 설치는 ZIP의 archive/bin/r6를 게임 폴더의 같은 경로에 덮어씁니다. 내부 archive 이름은 이전과 같아 중복 설치를 막습니다. Reload all mods만으로는 교체되지 않습니다.
 
-CET창에서 Enable/45도를 확인하고 닫은 뒤 양손 SMG·AR·산탄총 등으로 LT 조준합니다. v3는 CameraAim 입력 또는 실제 상체 조준 상태에서 추가 기울기를 켜고, 조준 종료 시 해제합니다. 권총·리볼버와 왼손 포즈는 유지합니다.
+CET의 **EDW Matched Dual-Gun Pose** 창에서 Match 체크, **Extra roll trim=0**을 사용하고 닫은 뒤 양손 SMG·AR·산탄총 등으로 LT 조준합니다. 이전 45도 설정은 추가 보정 0도로 이전합니다. 왼손의 기울기를 함께 반영하므로 0도에서도 맞춤 포즈는 켜집니다. `GetMod("EDWRightCant").status()`에서 `[EDWRightCant v4]`, 활성 요청 `weight=1`을 확인할 수 있습니다. 3초 테스트 버튼도 유지했습니다.
 
-`Test pose for 3s after closing CET` 버튼을 누르고 CET를 닫으면 LT 입력 없이3초간 기울기를 요청합니다. 이 시각 테스트는 입력 감지와 그래프 적용을 구분하기 위한 것입니다. `GetMod("EDWRightCant").status()`에는 `[EDWRightCant v3]`, effective/reason/lastAim/input이 출력됩니다. 각도/상태 값만으로 실제 회전은 증명되지 않습니다.
+종료 크래시 로그는 CET 종료 중 무기·아이템·스탯 파괴 경로의 널 접근을 보여주지만 EDW를 단일 원인으로 지목하지는 않습니다. 이전 패치의 **플레이어 객체 보관과 onShutdown 네이티브 호출을 제거**했습니다. 이제 종료 시 Lua 상태만 정리하고, 플레이어 분리 전에 업데이트를 차단하며, 상태 표시는 숫자·문자열 스냅샷만 읽습니다. 크래시 보고 기능을 끄는 변경은 없습니다.
 
-WolvenKit8.18.0 패킹/재추출 일치, 새 노드 초기화/최종 출력 연결 및 원본 필드 보존, CET Lua 검사를 통과했습니다. **실제 게임·redscript 컴파일·정확한 좌우 대칭은 미검증입니다.** 원본3.7 전용이며 다른 player_base 그래프 변경 모드와 충돌할 수 있습니다. 자세한 설치/테스트/삭제 안내는 ZIP에 있습니다.
+WolvenKit8.18.0 변환·패킹·재추출 일치, 새 노드51개의 초기화/소유자 등록, 원본 필드·연결 보존, 7개 생명주기 테스트와 5개 참조 뼈대 수학 테스트(무작위128포즈 포함)를 통과했습니다. **실제 플레이어 뼈대·게임 자세·redscript 컴파일·종료 크래시 해결은 이 환경에서 검증하지 못했습니다.** 원본3.7 전용이며 다른 player_base 변경 모드와 충돌할 수 있습니다. 상세 설치·진단·검증 결과는 ZIP에 있습니다.
 
 ---
 
