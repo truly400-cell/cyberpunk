@@ -1,3 +1,19 @@
+# VHaptics Trigger Recoil — 듀얼센스 USB 테스트 빌드 v1
+
+[설치 ZIP 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/VHaptics_TriggerRecoil_USB_TEST_v1.zip) · [추가 프로그램 소스 및 테스트](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/VHaptics_TriggerRecoil_USB_TEST_v1_SOURCE.zip)
+
+사용자가 제공한 VHaptics v1.0에 **발사 이벤트 기반 적응형 트리거 진동**을 추가했습니다. SMG·돌격소총·기관총은 연사 간격에 따라 트리거를 떨고, 발사가 끝나면 효과를 해제합니다. 기존 몸체 오디오 진동 실행 파일과 CSV·redscript는 유지합니다.
+
+**듀얼센스/엣지 USB 전용이며 실제 Windows·게임·패드 실행은 미검증입니다.** Lua 연결 검증, Go 테스트 12개, Windows x64 빌드 및 정적 검사를 통과한 테스트 빌드입니다. 블루투스는 지원하지 않습니다.
+
+게임 종료 후 기존 모드를 백업하고 ZIP의 `bin`·`r6` 폴더를 게임 설치 폴더에 덮어쓰세요. 모드 폴더의 `start_triggers.bat`를 별도로 실행해야 합니다. **게임의 바닐라 적응형 트리거 및 DSX 등 다른 트리거 출력을 꺼야 합니다. 바닐라 압력과 진동을 합성하는 기능은 없습니다.** 원본 `VHaptics.exe`의 몸체 진동은 기존 사용법대로 실행합니다.
+
+강도는 모드 폴더의 `triggers.ini`에서 `strength=5`를 1~8로 조절한 뒤 보조 프로그램을 재시작합니다. `test_triggers.bat`로 게임 밖에서 R2 2초 테스트를 할 수 있으며, 중단은 `stop_triggers.bat`입니다. 설치·진단·원복 안내와 검증 보고서는 ZIP에 있습니다.
+
+참고 요청된 Nexus Mods 4156 페이지는 네트워크 정책 때문에 확인하지 못했습니다. 첨부 모드와 공개 DualSense USB 프로토콜을 바탕으로 추가 기능을 구현했습니다.
+
+---
+
 # Alex Complete 1.0 — Bob Pack Vol.2 #006 / 빨간색 v1
 
 [설치용 PATCH ZIP 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/Alex_Bob006_Red_v1_PATCH.zip) · [.archive 파일만 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/%21%21%21%21%21_Alex_Bob006_Red_PATCH_v1.archive)
