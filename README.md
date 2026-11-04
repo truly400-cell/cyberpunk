@@ -1,14 +1,18 @@
-# Expanded Dual Wielding 3.7 — 오른쪽 무기 소실 복구 v5
+# Expanded Dual Wielding3.7 — 조준 자동 균형 보정 v6 TEST
 
-[v5 복구 ZIP 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/EDW_3.7_RightHand_VisibilityRecovery_v5.zip)
+[v6 설치 ZIP 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/EDW_3.7_DualGun_AutoBalance_v6_TEST.zip) · [소스와 검사 코드](src/edw-v6/)
 
-**v4 사용 중지:** 실제 게임에서 오른쪽 무기가 화면 밖으로 벗어나고 팔이 카메라 앞으로 이동하는 오류가 확인됐습니다. v4의 참조 뼈대 수학 검사와 파일 변환 검사는 실제 플레이어 포즈를 검증하지 못했습니다.
+긴 총기의 오른손이 중앙 아래로 몰리는 위치 차이를 보정하도록 변경했습니다. 손목의 추정 축을 돌리던 v3/v5 방식을 제거하고, 원본 특정 SMG의 **카메라 기준 ADS 기울기 경로**를 재사용합니다. 실제 좌우 무기 엔티티 위치를 카메라 좌표로 측정해 오른쪽의 좌우 간격·높이·앞뒤 거리를 왼쪽에 맞추는 상대 이동량을 계산합니다.
 
-v5는 v4의 절대 위치·회전 복사와 좌표 변환을 제거하고, **사용자 화면에서 오른쪽 무기가 보였던 v3 그래프를 바이트 그대로 복원**합니다. 오른손 기본45도 기울기와 v4의 종료 처리 수정은 유지합니다. **권총처럼 정확하게 양손 위치를 맞추는 작업은 아직 미해결입니다.**
+위치는 `Camera → 초기 위치0인 Offset → 원래 위치를 스냅한 Shoulder` 가상 뼈대로 전달합니다. 오른팔 전체의 위치를 제한된 범위에서 옮기며, v4의 절대 위치 복사·NPC 참조 뼈대·LS/MS 포즈 변환을 사용하지 않습니다. 원점이 반응하지 않거나 오차가 증가하면 위치 보정을0으로 해제합니다. **v4는 계속 사용 중지입니다.**
 
-**게임 완전 종료 → 이전 v1~v4 패치 OFF → v5만 ON. 원본 EDW3.7은 ON.** 수동 설치는 ZIP의 archive/bin/r6를 같은 게임 경로에 덮어씁니다. 내부 archive 이름은 이전과 같습니다. CET의 EDW Right-hand Cant v5 Recovery에서 Enable을 켜고 Extra roll trim=0으로 둔 뒤 창을 닫습니다. v4에서 Match를 껐다면 비활성 설정이 남으므로 Enable을 다시 켜세요.
+**게임 완전 종료 → 이전 v1~v5 패치 OFF → v6만 ON. 원본 EDW3.7은 ON.** 수동 설치는 ZIP의 archive/bin/r6를 같은 게임 경로에 덮어씁니다. 내부 archive 파일명은 이전과 같습니다. 기본값은 Enable/Auto-balance ON, Extra cant trim0입니다. 이전에 기능을 껐다면 CET의 EDW Dual-Gun Balance v6에서 다시 켜주세요.
 
-플레이어 객체 보관과 종료 시 게임 API/네이티브 호출은 제거된 상태를 유지합니다. ZIP 무결성·v3 아카이브 바이트 일치·CET 설정 및7개 분리/종료 모의 테스트를 통과했습니다. 실제 게임에서 v5의 무기 표시·redscript 컴파일·종료 크래시 해결은 미검증입니다. 상세 설치·원복·검증 결과는 ZIP에 있습니다.
+**CET를 닫고, 양손 무기로 LT를 약1.3초간 사격하지 않고 유지하세요.** 조준 포즈가 자리잡은 뒤 최대1초간 보정하고, LT를 놓을 때까지 위치를 고정합니다. 다음 조준에서 다시 계산합니다. 오른손 권총·리볼버와 기존 제외 상황은 원본 처리를 유지합니다. 무기 크기·그립·부착물이 다르면 외곽선까지 같아지지는 않습니다.
+
+모의 측정7개·제어9개·종료/통합10개 테스트와 설정 검증,129개 카메라 자세의 이동값0 보존 계산, WolvenKit 변환·패킹·재추출 바이트 일치, 새 노드 등록과 원본 데이터 보존 검사를 통과했습니다. 종료 시 게임 API/네이티브 호출을 제거한 수정도 유지합니다.
+
+**실제 게임·redscript 컴파일·FPP 이동에 대한 무기 엔티티 원점 반응·최종 균형·종료 크래시 해결은 이 환경에서 미검증입니다.** `GetMod("EDWRightCant").status()`의 balance/lastBalance와 모드 폴더의 balance-status.json에 측정 결과를 남깁니다. aligned는 측정 원점 오차1cm 이하를 뜻하며 시각적 대칭의 증명은 아닙니다. 상세 설치·제한·진단·검증 보고서는 ZIP에 있습니다.
 
 ---
 

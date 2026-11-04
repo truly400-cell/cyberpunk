@@ -1,0 +1,62 @@
+{
+  "revision": 6,
+  "allHandleDefinitionsUniqueAndReferencesResolved": true,
+  "parentNewRuntimeNodesRegisteredInInitAndOwner": 8,
+  "childNewRuntimeNodesRegisteredInInitAndOwner": 5,
+  "originalParentFieldsAndLinksPreservedExceptDeclaredFinalInsertion": true,
+  "originalChildFieldsAndLinksPreservedExceptDeclaredThreeLinkEdits": true,
+  "virtualTransformCount": 3,
+  "virtualTransformPairInitIndicesVerifiedAfterRoundtrip": true,
+  "cameraWholeTransformAndShoulderTranslationOnlySnapsVerified": true,
+  "translationTargetsSeparateIdentityLocalOffsetHelper": true,
+  "zeroOffsetAndCameraBasisGeometry": {
+    "cameraPoseCases": 129,
+    "randomCameraPoseCases": 128,
+    "translationModes": [
+      "replace",
+      "add"
+    ],
+    "zeroOffsetBaselinePreserved": true,
+    "cameraBasisDeltaMappingVerified": true,
+    "nativeEvaluationProven": false
+  },
+  "vectorSocketsUseThreeNonNullFeatureInputLinks": true,
+  "onlyRealBoneModifiedByAddedParentNodes": "RightShoulder translation only",
+  "addedHandRotations": 0,
+  "addedLsMsConversions": 0,
+  "addedAbsoluteSetBonePositionNodes": 0,
+  "addedFloatTrackCaptures": 0,
+  "childOriginalCameraExclusionAndRasetsuSwitchPreserved": true,
+  "childInactiveWrapperAndMinus45AnglePreserved": true,
+  "bothPackedResourcesReextractBytesIdentical": true,
+  "nativeScriptsCompiledInGame": false,
+  "gameVisualTested": false,
+  "positionAlignmentOrExitCrashEliminationProven": false,
+  "archiveSHA256": "a640a562846db94f8f4445aac3ae420b908733238f3dc291d2366cc23bd01537",
+  "archiveResourceCount": 2,
+  "luaMeasurementTestsPassed": 7,
+  "luaControllerTestsPassed": 9,
+  "luaLifecycleAndIntegrationTestsPassed": 10,
+  "luaSettingsValidation": "passed: schema6 defaults, migration, enable/balance, bounds, persistence, deferred test",
+  "calibration": {
+    "settleUpdates": 5,
+    "maxMeasurementUpdates": 20,
+    "gain": 0.35,
+    "normalStepLimitMeters": 0.035,
+    "axisLimitsMeters": [
+      0.25,
+      0.18,
+      0.2
+    ],
+    "totalLimitMeters": 0.3,
+    "alignmentToleranceMeters": 0.01,
+    "noResponseOrDivergence": "resets zero and freezes until next aim",
+    "target": "Actual weapon entity origins reflected across camera lateral plane; equal depth and height",
+    "weaponEntityOriginsFollowFppGraphInGameVerified": false
+  },
+  "retainedPlayerWeaponCameraUserdata": false,
+  "nativeCallsAfterDetachOrShutdownInMock": 0,
+  "actualGameExitCrashResolutionVerified": false,
+  "tool": "Official WolvenKit8.18.0 ConsoleLinux/.NET8; tool distribution SHA256 previously verified",
+  "toolDistributionSHA256": "6462c40be3b17e07d4a2663b4aebe0d71457b16589f8b356c45f72029dd91a5e"
+}
