@@ -1,16 +1,16 @@
-# Expanded Dual Wielding 3.7 — 오른손 조준 기울기 패치 v2 TEST
+# Expanded Dual Wielding 3.7 — 오른손 조준 기울기 패치 v3 TEST
 
-[v2 설치 ZIP 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/EDW_3.7_RightHand_AimCant_v2_TEST.zip)
+[v3 설치 ZIP 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/EDW_3.7_RightHand_AimCant_v3_TEST.zip)
 
-v1은 원본 EDW의 선택 기능인 **독립 조작**을 적용 조건에 넣어, 기본 조작 쌍수에서도 `requested=45 effective=0`으로 추가 기울기가 꺼질 수 있었습니다. v2는 이 의존성을 제거하고, 상위 플레이어 그래프에도 회전 기능을 등록했습니다. 상태 출력에 제외 이유를 추가하고 CET를 열기 직전의 게임 상태를 유지합니다.
+v2에서 `effective=45 reason=active`가 표시돼도 실제 오른손이 기울지 않는 사용자 보고를 받았습니다. v1/v2의 새 노드가 **nodesToInit 초기화 목록에 누락된 점**을 고쳤습니다. v3는 새 노드3개를 초기화/소유자 목록에 등록하고, 회전을 상위 player_base 그래프의 최종 출력 직전으로 옮겼습니다. 하위 player_dualwield는 원본 EDW3.7 데이터로 복원했습니다.
 
-**게임을 완전히 종료한 뒤 v1 패치를 v2로 교체하세요. 원본 EDW 3.7은 유지합니다.** 수동 설치는 ZIP의 `archive`·`bin`·`r6`를 같은 경로에 덮어쓰고, 모드 매니저는 v1 패치 OFF/v2 패치 ON으로 설정합니다. archive 이름은 중복 설치 방지를 위해 v1과 같은 이름을 유지했지만 내용은 v2입니다.
+**게임 완전 종료 → 기존 v1/v2 패치 OFF → v3 패치 ON. 원본 EDW3.7은 유지합니다.** 수동 설치는 ZIP의 archive/bin/r6를 같은 경로에 덮어씁니다. 이전 패치와 같은 archive 파일명을 사용하여 중복을 막습니다.
 
-양손 SMG·AR·산탄총 등 비권총 조합의 오른손 ADS에 기본45도 회전을 추가합니다. 권총·리볼버와 왼손 포즈는 보존합니다. CET `EDW Right-hand Aim Cant` 창에서 -60~60도로 조절하고 **CET를 닫으면 반영**됩니다.
+CET창에서 Enable/45도를 확인하고 닫은 뒤 양손 SMG·AR·산탄총 등으로 LT 조준합니다. v3는 CameraAim 입력 또는 실제 상체 조준 상태에서 추가 기울기를 켜고, 조준 종료 시 해제합니다. 권총·리볼버와 왼손 포즈는 유지합니다.
 
-게임 중 조준 후 `GetMod("EDWRightCant").status()`로 `[EDWRightCant v2]`, `effective=45 reason=active`를 확인할 수 있습니다. 이 값은 스크립트가 전달한 각도이며 시각 결과의 증명은 아닙니다. 제외 이유별 설명과 설치·원복 안내는 ZIP의 `README_KO.txt`에 있습니다.
+`Test pose for 3s after closing CET` 버튼을 누르고 CET를 닫으면 LT 입력 없이3초간 기울기를 요청합니다. 이 시각 테스트는 입력 감지와 그래프 적용을 구분하기 위한 것입니다. `GetMod("EDWRightCant").status()`에는 `[EDWRightCant v3]`, effective/reason/lastAim/input이 출력됩니다. 각도/상태 값만으로 실제 회전은 증명되지 않습니다.
 
-WolvenKit8.18.0 패킹·재추출 일치, 상위 그래프 기능 등록 외 원본 필드 보존 및 CET Lua 설정 검사를 통과했습니다. **v2 실제 게임·redscript 컴파일·정확한 좌우 대칭은 미검증**입니다. EDW3.7 전용이며 원본 업데이트 시 먼저 제거하세요. 왼손 클립을 복제한 방식이 아니라 오른손ADS 회전 추가 방식입니다.
+WolvenKit8.18.0 패킹/재추출 일치, 새 노드 초기화/최종 출력 연결 및 원본 필드 보존, CET Lua 검사를 통과했습니다. **실제 게임·redscript 컴파일·정확한 좌우 대칭은 미검증입니다.** 원본3.7 전용이며 다른 player_base 그래프 변경 모드와 충돌할 수 있습니다. 자세한 설치/테스트/삭제 안내는 ZIP에 있습니다.
 
 ---
 
