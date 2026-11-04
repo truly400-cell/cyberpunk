@@ -1,3 +1,15 @@
+# Expanded Dual Wielding 3.7 — 오른손 조준 기울기 패치 v1 TEST
+
+[설치 ZIP 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/EDW_3.7_RightHand_AimCant_v1_TEST.zip)
+
+사용자가 제공한 **Expanded Dual Wielding 3.7**에 추가하는 오른손 ADS 기울기 테스트 패치입니다. 양손 원거리 무기 중 오른손이 SMG·AR·산탄총 등 비권총일 때 오른손 조준 분기에 손목 회전을 추가합니다. 기본 45도이며 CET의 `EDW Right-hand Aim Cant` 창에서 -60~60도로 조절할 수 있습니다. 권총·리볼버와 왼손 분기는 유지합니다.
+
+게임 종료 후 원본 EDW 3.7을 유지한 채 ZIP의 `archive`·`bin`·`r6`를 게임 폴더에 추가하세요. 원본 파일은 덮어쓰지 않습니다. 제거할 새 경로와 상세 설치·각도 조절 안내는 ZIP의 `README_KO.txt`에 있습니다.
+
+WolvenKit 8.18.0 재패킹·재추출 일치, 원본 그래프 필드 보존 및 CET Lua 설정 테스트를 통과했습니다. **실제 게임·redscript 컴파일·정확한 좌우 대칭은 미검증입니다.** 왼손 클립 자체를 복제한 것이 아니라 오른손 ADS 회전을 추가한 방식이므로, 실제 왼손 자세와 비교해 각도를 맞춰야 합니다. EDW 3.7 전용이며 이후 버전 업데이트 시 먼저 제거하세요.
+
+---
+
 # VHaptics Trigger Recoil — 듀얼센스 USB 테스트 빌드 v1
 
 [설치 ZIP 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/VHaptics_TriggerRecoil_USB_TEST_v1.zip) · [추가 프로그램 소스 및 테스트](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/VHaptics_TriggerRecoil_USB_TEST_v1_SOURCE.zip)
