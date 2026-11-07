@@ -1,0 +1,146 @@
+[
+  {
+    "resource": "base/4k/common/head/h0_000_wa_c__basehead_rm01.xbm",
+    "source": "Visages",
+    "bytes": 3359872,
+    "sha256": "2aee64d820403b1e01953f81f9aa5ac6a8ffa6347510180718a6b482828d62d2"
+  },
+  {
+    "resource": "base/4k/common/overlays/normals/wa_head_overlay_n01.xbm",
+    "source": "Visages",
+    "bytes": 1792,
+    "sha256": "5c7bb1161fd7edda5e2615204c42d74c8ab958adcfb020e7d9a0383cb0d093bb"
+  },
+  {
+    "resource": "base/characters/common/skin/character_mat_instance/01_ca_pale.mi",
+    "source": "K_HEAD_V3",
+    "bytes": 941,
+    "sha256": "229dc4487cb5c53253d02518841fb6ac5f7bd725b2278d73d20ba7b5246ef044"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/h0_000_pwa__morphs.morphtarget",
+    "source": "K_HEAD_V3",
+    "bytes": 12838813,
+    "sha256": "5e8838031a4ddcf7562c203f9f9ae6ebd7c6bc1a25a6adf1e09852a7c89c789f"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/h0_000_pwa_c__basehead/textures/h0_000_pwa_c__basehead_d01.xbm",
+    "source": "Visages",
+    "bytes": 8171399,
+    "sha256": "0508d442bdb5d3d87434807db7db102e4dee601be6032cd453c6f2ee772583f7"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/h0_000_pwa_c__basehead/textures/h0_000_pwa_c__basehead_d02.xbm",
+    "source": "Visages",
+    "bytes": 8178972,
+    "sha256": "c6e315fa00164fcbda0910fa40b2d81f82695958a516c1dfb654052b17b00d3c"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/h0_000_pwa_c__basehead/textures/h0_000_pwa_c__basehead_d03.xbm",
+    "source": "Visages",
+    "bytes": 8164306,
+    "sha256": "64a5c6293d0f9c694a50a77c72dfa003e07f30d392b061f9f6ddca5d838b9bcc"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/h0_000_pwa_c__basehead/textures/h0_000_pwa_c__basehead_d04.xbm",
+    "source": "Visages",
+    "bytes": 8196710,
+    "sha256": "d44e97447fbd6390a8932f8e01c4602647f79b49f8217137f54e2c40e9e50dab"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/h0_000_pwa_c__basehead/textures/h0_000_pwa_c__basehead_d05.xbm",
+    "source": "Visages",
+    "bytes": 8162687,
+    "sha256": "7ce35ebbd6b32ef657918399dde899766330c0aa88adffaa18cbfd0b94cbf2c5"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/h0_000_pwa_c__basehead/textures/h0_001_pwa_c__basehead_n01.xbm",
+    "source": "Visages",
+    "bytes": 10771034,
+    "sha256": "5769bf5f88a514af8456e0919039360c0b3fabe01ba4592716fc0e52ed185ede"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/h0_000_pwa_c__basehead/textures/h0_001_pwa_c__basehead_n_detail.xbm",
+    "source": "Visages",
+    "bytes": 1712,
+    "sha256": "3ee2b2dbb6af183ef7a335f771e206327e60bc3fc955d64086ec9686c41be48b"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/h0_000_pwa_c__basehead/textures/h0_001_pwa_c__basehead_rm.xbm",
+    "source": "Visages",
+    "bytes": 3360768,
+    "sha256": "f82851aecc9bf9dcc51fa5957a8b4629165c80ebefb63935671adc449d457b49"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/he_000_pwa__morphs.morphtarget",
+    "source": "K_HEAD_V3",
+    "bytes": 2936410,
+    "sha256": "97ccaf2727e5b775b612879c32b1377966c1571bd343b501b181cb3f0f398211"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/ht_000_pwa__morphs.morphtarget",
+    "source": "K_HEAD_V3",
+    "bytes": 716091,
+    "sha256": "b793f917802c4d37da9c6a8f807322fcc0a9e769554cfaa888e5adf795ac7012"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/hx_000_pwa__morphs_cyberware_01.morphtarget",
+    "source": "K_HEAD_V3",
+    "bytes": 3783521,
+    "sha256": "a545e384fbdd44b5e1a8db238895f3c6df0a5131844155592cc03b3f7d77ae2d"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/hx_000_pwa__morphs_cyberware_02.morphtarget",
+    "source": "K_HEAD_V3",
+    "bytes": 2450969,
+    "sha256": "7d0443226428c4e35e96e2ce3304c62afbac9ddb7da48daec64bed7e5acb9da1"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/hx_000_pwa__morphs_cyberware_03.morphtarget",
+    "source": "K_HEAD_V3",
+    "bytes": 6708090,
+    "sha256": "b080649e7ed70613e26ad93ffa2e1942060ec510f87aa3514f46f87b9ceabfbb"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/hx_000_pwa__morphs_cyberware_04.morphtarget",
+    "source": "K_HEAD_V3",
+    "bytes": 4484282,
+    "sha256": "e1addb7a1d5f443ca3cb192f3889b494ff1c2fa44cec90e9534d9895c950ccb9"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/hx_000_pwa__morphs_cyberware_05.morphtarget",
+    "source": "K_HEAD_V3",
+    "bytes": 3054633,
+    "sha256": "84331b68e3bdc49bcad1daf80dab60841d6aed0efd33295f638bb946c7553a0d"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/hx_000_pwa__morphs_cyberware_06.morphtarget",
+    "source": "K_HEAD_V3",
+    "bytes": 4521325,
+    "sha256": "09bf258d1b873477a1d0e4303f207ff552add2f07f2cf681c117f006f11efcc7"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/hx_000_pwa__morphs_cyberware_07.morphtarget",
+    "source": "K_HEAD_V3",
+    "bytes": 2191547,
+    "sha256": "2227c7bfdf0eaa87b5b5f0071e4280f9fd4def11f8332992bd2fea154d059098"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/hx_000_pwa__morphs_makeup_eyes_01.morphtarget",
+    "source": "K_HEAD_V3",
+    "bytes": 3282210,
+    "sha256": "17d794a553115ae91ac0ef974ea715bc2b14794a01b70281ca7326c7a4cfba3d"
+  },
+  {
+    "resource": "base/characters/head/player_base_heads/player_female_average/hx_000_pwa__morphs_makeup_lips_01.morphtarget",
+    "source": "K_HEAD_V3",
+    "bytes": 2004582,
+    "sha256": "24c91cbdb31e9244bb3fec1ffb4e4b2ee10bcfabbcad4e6eea0c2a65a19aaeea"
+  },
+  {
+    "resource": "ep1/characters/main_npc/dante/h0_001_ma_c__dante/textures/hx_eyes_cyberware_01_d01.xbm",
+    "source": "K_HEAD_V3",
+    "bytes": 32094,
+    "sha256": "15870fc673bde17740aeb855a1db4e9eaeac956bbd09b4c01209cfd30c07f2e6"
+  }
+]

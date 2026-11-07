@@ -1,0 +1,51 @@
+{
+  "visagesResourceCount": 10,
+  "kheadResourceCount": 20,
+  "sharedKeys": 6,
+  "mergedResourceCount": 24,
+  "mergedPathHashesMatchInputUnion": true,
+  "revision": 1,
+  "scope": "Female V: K_HEAD_V3 head morphology and unique assets, Visages4K face textures",
+  "split7zAndNestedZipReadSuccessfully": true,
+  "nestedZipCRCVerified": true,
+  "originalArchiveFileCount": 3,
+  "uniqueOriginalArchiveCount": 2,
+  "visagesPriorityCopiesBytesIdentical": true,
+  "sharedResourcesWithDifferentContent": 6,
+  "sharedResourceChoice": "Visages for diffuse d01-d05 and basehead_n01 normal map",
+  "selectedResources": {
+    "Visages": 10,
+    "K_HEAD_V3": 14,
+    "KHeadMorphTargets": 12,
+    "KHeadMaterialInstances": 1,
+    "KHeadUniqueEyeTextures": 1
+  },
+  "all24ReextractedResourcesBytesIdenticalToSelectedSources": true,
+  "allSelectedResourcesHaveCR2WHeader": true,
+  "selectedOriginalResourcesReencoded": false,
+  "normalMetadata": {
+    "Visages": {
+      "width": 4096,
+      "height": 4096,
+      "mipCount": 1,
+      "compression": "TCM_Normalmap"
+    },
+    "K_HEAD_V3": {
+      "width": 1024,
+      "height": 1024,
+      "mipCount": 11,
+      "compression": "TCM_Normalmap"
+    },
+    "KHeadBaseMorph": {
+      "renderHeaderNumTargets": 0,
+      "textureDiffDescriptorArraysEmpty": true,
+      "originalMorphDataAndBuffersBytesPreserved": true
+    }
+  },
+  "archiveFile": "!!!!!!!!!!!!!!!!!_Visages4K_K_HEAD_V3_MERGED_v1.archive",
+  "archiveBytes": 72142848,
+  "archiveSHA256": "0f6f654b0617fbadda9e40a3cb8f31cfbbf6bdbe1cb113951293ba37f5e4911f",
+  "tool": "Official WolvenKit8.18.0 ConsoleLinux with .NET8; pack and reextract completed",
+  "gameVisualTested": false,
+  "gameLightingOrExactKHeadSkinStylePreserved": false
+}

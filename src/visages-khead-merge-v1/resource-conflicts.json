@@ -1,0 +1,55 @@
+{
+  "visages": 10,
+  "khead": 20,
+  "union": 24,
+  "overlaps": [
+    {
+      "resource": "base/characters/head/player_base_heads/player_female_average/h0_000_pwa_c__basehead/textures/h0_000_pwa_c__basehead_d01.xbm",
+      "visagesBytes": 8171399,
+      "kheadBytes": 1009441,
+      "identical": false,
+      "visagesSHA256": "0508d442bdb5d3d87434807db7db102e4dee601be6032cd453c6f2ee772583f7",
+      "kheadSHA256": "b14732380fa7e5763218bcebf5a80056f8a05a726a255b553a6194ce7e09c721"
+    },
+    {
+      "resource": "base/characters/head/player_base_heads/player_female_average/h0_000_pwa_c__basehead/textures/h0_000_pwa_c__basehead_d02.xbm",
+      "visagesBytes": 8178972,
+      "kheadBytes": 1004827,
+      "identical": false,
+      "visagesSHA256": "c6e315fa00164fcbda0910fa40b2d81f82695958a516c1dfb654052b17b00d3c",
+      "kheadSHA256": "8fb95bb71fa27e38c6b063fc26cff1e7b7ec9b20533a306f235e93164b233a85"
+    },
+    {
+      "resource": "base/characters/head/player_base_heads/player_female_average/h0_000_pwa_c__basehead/textures/h0_000_pwa_c__basehead_d03.xbm",
+      "visagesBytes": 8164306,
+      "kheadBytes": 1008692,
+      "identical": false,
+      "visagesSHA256": "64a5c6293d0f9c694a50a77c72dfa003e07f30d392b061f9f6ddca5d838b9bcc",
+      "kheadSHA256": "0067da2cf2dbc93c219de4871afc6d9ffecc61e5cdb0d73f6341fd0c15e2fe62"
+    },
+    {
+      "resource": "base/characters/head/player_base_heads/player_female_average/h0_000_pwa_c__basehead/textures/h0_000_pwa_c__basehead_d04.xbm",
+      "visagesBytes": 8196710,
+      "kheadBytes": 1024214,
+      "identical": false,
+      "visagesSHA256": "d44e97447fbd6390a8932f8e01c4602647f79b49f8217137f54e2c40e9e50dab",
+      "kheadSHA256": "67c8a217bf84da3a2b630a0acd727efd86e257a120c481691bb368317ee495a5"
+    },
+    {
+      "resource": "base/characters/head/player_base_heads/player_female_average/h0_000_pwa_c__basehead/textures/h0_000_pwa_c__basehead_d05.xbm",
+      "visagesBytes": 8162687,
+      "kheadBytes": 1034521,
+      "identical": false,
+      "visagesSHA256": "7ce35ebbd6b32ef657918399dde899766330c0aa88adffaa18cbfd0b94cbf2c5",
+      "kheadSHA256": "d2a6094dbe9cb07b96d0aa4278038c557e59b5381659d06dca1c341eb27c4297"
+    },
+    {
+      "resource": "base/characters/head/player_base_heads/player_female_average/h0_000_pwa_c__basehead/textures/h0_001_pwa_c__basehead_n01.xbm",
+      "visagesBytes": 10771034,
+      "kheadBytes": 945534,
+      "identical": false,
+      "visagesSHA256": "5769bf5f88a514af8456e0919039360c0b3fabe01ba4592716fc0e52ed185ede",
+      "kheadSHA256": "cd9468b3d068dd54dd18cf162930dcdb1a59ad0214006bd36526896f8accddc6"
+    }
+  ]
+}

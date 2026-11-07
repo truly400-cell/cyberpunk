@@ -1,3 +1,17 @@
+# Visages4K + K_HEAD_V3 — 얼굴형·피부 텍스처 합본 v1
+
+[합본 .archive 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/%21%21%21%21%21%21%21%21%21%21%21%21%21%21%21%21%21_Visages4K_K_HEAD_V3_MERGED_v1.archive) · [설치 안내](downloads/Visages4K_K_HEAD_V3_MERGED_v1_README_KO.txt) · [리소스 선택·검증 보고서](src/visages-khead-merge-v1/)
+
+두 모드의 얼굴 텍스처6개가 겹칩니다. 합본은 **K_HEAD의 얼굴형·눈·치아·사이버웨어 모프와 고유 재질/눈 텍스처를 유지하고, 피부 텍스처는 Visages4K를 사용**합니다. K_HEAD 고유14개와 Visages10개를 합친24개 리소스입니다. K_HEAD의 원래 피부 칠/기본 노멀 음영은 Visages로 바뀌며, 고유 피부 재질 설정은 유지합니다.
+
+**게임 종료 → Visages 원본2파일과 K_HEAD_V3 원본 OFF → 합본 .archive 하나를 `archive/pc/mod/`에 설치.** 원본의 의존성·캐릭터 설정은 기존대로 유지합니다. 여성V 리소스가 대상입니다. 느낌표 개수만 다른 Visages2파일은 내용/SHA256이 같은 중복입니다.
+
+분할7z복원·ZIP CRC, WolvenKit8.18.0 패킹·재추출,24개 선택 리소스의 원본 바이트 일치와 리소스 경로 해시 합집합 검증을 통과했습니다. 원본 모프·재질·텍스처 내부는 그대로 보존합니다. **실제 게임 로딩·외형·조명은 미검증입니다.**
+
+합본 SHA256: `0f6f654b0617fbadda9e40a3cb8f31cfbbf6bdbe1cb113951293ba37f5e4911f`
+
+---
+
 # Expanded Dual Wielding3.7 — 조준 자동 균형 보정 v6 TEST
 
 [v6 설치 ZIP 다운로드](https://github.com/truly400-cell/cyberpunk/raw/refs/heads/main/downloads/EDW_3.7_DualGun_AutoBalance_v6_TEST.zip) · [소스와 검사 코드](src/edw-v6/)
